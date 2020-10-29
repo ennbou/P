@@ -52,3 +52,18 @@
     font-size: 0.3em;
     text-anchor: middle;
   }
+
+  .text-color {
+    background: linear-gradient(92.05deg, #BCA1F7 12.09%, #E577B4 42.58%, #FF7170 84.96%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.bg-purple {
+  background-color: #7510F7;
+}
+
+.text-purple {
+  color: #7510F7;
+}
