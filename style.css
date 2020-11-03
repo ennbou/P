@@ -34,20 +34,18 @@
   margin-top: -14rem;
 }
 
-.border-shadow{
+.border-shadow {
   border-radius: 12px;
-  box-shadow: 0 5px 5px 0 rgba(233, 240, 243, 0.5), 0 0 0 1px #E6ECF8;
+  box-shadow: 0 5px 5px 0 rgba(233, 240, 243, 0.5), 0 0 0 1px #e6ecf8;
 }
-
 
 .w-px-100 {
   width: 100px;
 }
 
-.text-darkblue{
+.text-darkblue {
   color: #141c3a;
 }
-
 
 .card-custom {
   overflow: hidden;
@@ -67,7 +65,7 @@
 /* First border-left-width setting is a fallback */
 .card-custom-img::after {
   position: absolute;
-  content: '';
+  content: "";
   top: 161px;
   left: 0;
   width: 0;
@@ -95,9 +93,15 @@
 }
 
 /* Img setup */
-img.setup { margin-bottom: -0.4rem; max-width: 100%;}
-@media screen and (min-width: 769px) { 
-  img.setup { margin-bottom: -0.45rem; max-width: 860px; } 
+img.setup {
+  margin-bottom: -0.4rem;
+  max-width: 100%;
+}
+@media screen and (min-width: 769px) {
+  img.setup {
+    margin-bottom: -0.45rem;
+    max-width: 860px;
+  }
 }
 
 /* avatar  */
@@ -113,31 +117,60 @@ img.setup { margin-bottom: -0.4rem; max-width: 100%;}
   width: 100%;
   height: auto;
 }
-.avatar { margin: 2rem 0; width: 150px; }
-@media screen and (min-width: 769px) { .avatar { width: 210px; } }
-
+.avatar {
+  margin: 2rem 0;
+  width: 150px;
+}
+@media screen and (min-width: 769px) {
+  .avatar {
+    width: 210px;
+  }
+}
 
 /* title  */
-.title { font-size: 3rem; font-weight: 500; font-family: 'Merienda', cursive;}
-@media screen and (min-width: 769px) {  .title { font-size: 3.5rem; } }
+.title {
+  font-size: 3rem;
+  font-weight: 500;
+  font-family: "Merienda", cursive;
+}
+@media screen and (min-width: 769px) {
+  .title {
+    font-size: 3.5rem;
+  }
+}
 
-
-
-.display-4{
+.display-4 {
   font-size: 3rem;
 }
 
-
-.border-right-bottom{
-  border-bottom: 1px solid #E6ECF8;
-  border-right: 0px solid #E6ECF8;
+.border-right-bottom {
+  border-bottom: 1px solid #e6ecf8;
+  border-right: 0px solid #e6ecf8;
 }
 
 @media screen and (min-width: 769px) {
-  
-  .border-right-bottom{
-    border-bottom: 0px solid #E6ECF8;
-    border-right: 1px solid #E6ECF8;
+  .border-right-bottom {
+    border-bottom: 0px solid #e6ecf8;
+    border-right: 1px solid #e6ecf8;
   }
+}
 
- }
+#header {
+  clip-path: polygon(
+    0 50px,
+    /* left top */ 100% 0,
+    /* right top */ 100% 100%,
+    /* right bottom */ 0 100% /* left bottom */
+  );
+}
+
+.link-unstyled,
+.link-unstyled:link,
+.link-unstyled:hover {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+
+.grow { transition: all .2s ease-in-out; }
+.grow:hover { transform: scale(1.1); }
