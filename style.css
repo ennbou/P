@@ -35,6 +35,8 @@
 }
 
 .border-shadow {
+  margin-left: 3rem !important;
+  margin-right: 3rem !important;
   border-radius: 12px;
   box-shadow: 0 5px 5px 0 rgba(233, 240, 243, 0.5), 0 0 0 1px #e6ecf8;
 }
@@ -119,7 +121,7 @@ img.setup {
 }
 .avatar {
   margin: 2rem 0;
-  width: 150px;
+  width: 130px;
 }
 @media screen and (min-width: 769px) {
   .avatar {
@@ -171,6 +173,112 @@ img.setup {
   text-decoration: inherit;
 }
 
+.grow {
+  transition: all 0.2s ease-in-out;
+}
+.grow:hover {
+  transform: scale(1.1);
+}
 
-.grow { transition: all .2s ease-in-out; }
-.grow:hover { transform: scale(1.1); }
+.name-responsive {
+  font-size: 2rem;
+}
+
+.second-avatar {
+  margin-left: 110px;
+}
+
+.text-description {
+  font-size: 1.8rem;
+}
+
+
+figure {
+  margin-bottom: 3rem !important;
+}
+
+.title-2{
+  font-size: 4.5rem;
+  font-weight: 300;
+  line-height: 1.2;
+  padding-bottom: 1rem!important;
+  padding-top: 1rem!important;
+  margin-bottom: 1.5rem!important;
+}
+
+/* ========================= */
+
+@media screen and (max-width: 770px) {
+  .title {
+    font-size: 2rem;
+    line-height: 2rem;
+    margin-bottom: 10px;
+  }
+
+  .sub-title {
+    font-size: 1rem;
+    line-height: 1rem;
+  }
+
+  .display-4 {
+    font-size: 1.8rem;
+  }
+
+  figure {
+    margin-bottom: 1rem !important;
+  }
+
+  .border-shadow {
+    margin-left: 1rem !important;
+    margin-right: 1rem !important;
+  }
+
+  .name-responsive {
+    font-size: 1.5rem;
+    margin-top: 0px !important;
+  }
+
+  .card-custom-avatar img {
+    border-radius: 50%;
+    box-shadow: 0 0 15px rgba(10, 10, 10, 0.3);
+    position: absolute;
+    top: 95px;
+    left: 1.25rem;
+    width: 60px;
+    height: 60px;
+  }
+  .second-avatar {
+    margin-left: 70px;
+  }
+
+  .text-description {
+    font-size: 1.25rem;
+  }
+
+  .card-body {
+    padding-top: 0px !important;
+  }
+
+  .card-custom-img {
+    height: 160px;
+    min-height: 160px;
+  }
+  .card-custom-img::after {
+    top: 125px;
+  }
+  .text-lh-15{
+    text-align: justify !important;
+  }
+  .title-2{
+    font-size: 2.5rem;
+  }
+
+  #header {
+    clip-path: polygon(
+      0 30px,
+      /* left top */ 100% 0,
+      /* right top */ 100% 100%,
+      /* right bottom */ 0 100% /* left bottom */
+    );
+  }
+}
