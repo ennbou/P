@@ -1,0 +1,14 @@
+[
+  {
+      "relation": [
+          "delegate_permission/common.handle_all_urls"
+      ],
+      "target": {
+          "namespace": "android_app",
+          "package_name": "ma.marjanemall.marjanemall",
+          "sha256_cert_fingerprints": [
+              "09:7E:3E:E5:38:05:A5:8A:D6:D7:3A:50:07:F8:A4:11:FB:9C:36:C3:41:C2:14:58:7A:63:82:F6:96:5F:BF:58"
+          ]
+      }
+  }
+]
